@@ -172,7 +172,8 @@ class CameraVC: UIViewController {
             if classification.confidence < 0.5 {
                 var unknownObjectMessage = "Not Sure, Please Try Again."
                 self.identificationLbl.text = unknownObjectMessage
-                
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
                 if languageSelection == "en-US" {
                     synthesizeSpeech(fromString: unknownObjectMessage)
                     break
