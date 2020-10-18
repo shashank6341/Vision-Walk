@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--CameraVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="Vision_Walk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="CameraVC" customModule="Vision_Walk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,29 +57,15 @@
                                     <constraint firstAttribute="height" constant="168" id="VYu-zW-iNS"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-K1-idQ">
-                                <rect key="frame" x="20" y="802" width="120" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="WEK-mc-XEX"/>
-                                    <constraint firstAttribute="height" constant="40" id="ygi-aw-M1C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
-                                <state key="normal" title="FLASH OFF">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="piH-SH-VVh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-Dd-aQj">
-                                <rect key="frame" x="159" y="802" width="60" height="40"/>
+                                <rect key="frame" x="20" y="752" width="220" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="7u4-sp-oXa"/>
+                                    <constraint firstAttribute="height" constant="90" id="VQM-AJ-ZQ1"/>
+                                    <constraint firstAttribute="width" constant="220" id="xH6-SY-44w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Eng">
+                                <state key="normal" title="Language: English">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -108,7 +94,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1t8-K1-idQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1D6-pa-6B3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P85-w6-MXK" secondAttribute="trailing" constant="20" id="25d-J4-IWD"/>
                             <constraint firstItem="q6p-Wy-qgu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2qK-H2-L9I"/>
                             <constraint firstItem="stw-WG-L0W" firstAttribute="top" secondItem="P85-w6-MXK" secondAttribute="bottom" constant="10" id="3oz-xI-PMj"/>
@@ -117,12 +102,11 @@
                             <constraint firstItem="q6p-Wy-qgu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" symbolic="YES" id="KpO-yV-2kX"/>
                             <constraint firstItem="P85-w6-MXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WtT-Bh-gW2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kvs-Dd-aQj" secondAttribute="bottom" constant="20" id="Yzq-dm-q5i"/>
-                            <constraint firstItem="Kvs-Dd-aQj" firstAttribute="leading" secondItem="1t8-K1-idQ" secondAttribute="trailing" constant="19" id="bvN-fw-vDU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WBi-lL-Fa1" secondAttribute="bottom" constant="20" id="fAq-8R-t2c"/>
                             <constraint firstItem="stw-WG-L0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k14-4I-DPt"/>
                             <constraint firstItem="P85-w6-MXK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lFf-m0-kVm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1t8-K1-idQ" secondAttribute="bottom" constant="20" id="rJM-yi-Vfw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WBi-lL-Fa1" secondAttribute="trailing" constant="20" id="thw-d5-Ks2"/>
+                            <constraint firstItem="Kvs-Dd-aQj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wH2-x5-tjT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="stw-WG-L0W" secondAttribute="trailing" constant="20" id="ylO-PK-flS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -131,7 +115,6 @@
                         <outlet property="cameraView" destination="q6p-Wy-qgu" id="uHB-rU-CRi"/>
                         <outlet property="captureImageView" destination="WBi-lL-Fa1" id="hrp-XT-P3c"/>
                         <outlet property="confidenceLbl" destination="KBG-4I-b7c" id="R9w-Kt-ski"/>
-                        <outlet property="flashBtn" destination="1t8-K1-idQ" id="Ac4-Jx-MaB"/>
                         <outlet property="identificationLbl" destination="Plu-yZ-pt2" id="qcw-v6-jiD"/>
                         <outlet property="internetLbl" destination="w5n-OK-S6o" id="xVF-oX-WXt"/>
                         <outlet property="internetView" destination="stw-WG-L0W" id="Aq0-1S-Rha"/>
@@ -141,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="129.08545727136433"/>
+            <point key="canvasLocation" x="136.23188405797103" y="128.57142857142856"/>
         </scene>
     </scenes>
 </document>

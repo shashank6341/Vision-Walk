@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="rOc-0x-Tdi">
+            <objects>
+                <viewController storyboardIdentifier="onboardingStoryboard" id="qd1-EF-G74" customClass="OnboardingViewController" customModule="Vision_Walk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kiQ-sA-Xk9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdK-FT-1RW">
+                                <rect key="frame" x="20" y="159" width="374" height="543"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="543" id="0ee-qw-YUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Tap Detection Area"/>
+                                <connections>
+                                    <action selector="detectBtn:" destination="qd1-EF-G74" eventType="touchUpInside" id="l3s-9I-jDl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkn-aM-Rgq">
+                                <rect key="frame" x="20" y="752" width="220" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="0Gx-Eu-fd4"/>
+                                    <constraint firstAttribute="height" constant="90" id="LMF-Mh-ih0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Language"/>
+                                <connections>
+                                    <action selector="languageBtn:" destination="qd1-EF-G74" eventType="touchUpInside" id="OzM-Tw-bgA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osL-74-zwe">
+                                <rect key="frame" x="264" y="752" width="130" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ght-18-Zhk"/>
+                                    <constraint firstAttribute="width" constant="130" id="meP-VW-ckg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startBtn:" destination="qd1-EF-G74" eventType="touchUpInside" id="Vql-GE-DCy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FPT-Xx-3jD" firstAttribute="bottom" secondItem="osL-74-zwe" secondAttribute="bottom" constant="20" id="KVF-NJ-ELF"/>
+                            <constraint firstItem="LdK-FT-1RW" firstAttribute="leading" secondItem="FPT-Xx-3jD" secondAttribute="leading" constant="20" id="P2a-th-5Lb"/>
+                            <constraint firstItem="Rkn-aM-Rgq" firstAttribute="top" secondItem="LdK-FT-1RW" secondAttribute="bottom" constant="50" id="QhJ-1b-LaO"/>
+                            <constraint firstItem="FPT-Xx-3jD" firstAttribute="trailing" secondItem="LdK-FT-1RW" secondAttribute="trailing" constant="20" id="aak-4j-qPs"/>
+                            <constraint firstItem="LdK-FT-1RW" firstAttribute="top" secondItem="FPT-Xx-3jD" secondAttribute="top" constant="115" id="dyx-o9-DQ6"/>
+                            <constraint firstItem="Rkn-aM-Rgq" firstAttribute="leading" secondItem="FPT-Xx-3jD" secondAttribute="leading" constant="20" id="jCG-yM-I6M"/>
+                            <constraint firstItem="FPT-Xx-3jD" firstAttribute="trailing" secondItem="osL-74-zwe" secondAttribute="trailing" constant="20" id="tN5-Ln-LnY"/>
+                            <constraint firstItem="FPT-Xx-3jD" firstAttribute="bottom" secondItem="Rkn-aM-Rgq" secondAttribute="bottom" constant="20" id="wUo-xI-xpb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FPT-Xx-3jD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGD-OP-AjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="19.419642857142858"/>
+        </scene>
+    </scenes>
+</document>

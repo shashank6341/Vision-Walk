@@ -172,6 +172,7 @@ class CameraVC: UIViewController {
             if classification.confidence < 0.5 {
                 var unknownObjectMessage = "Not Sure, Please Try Again."
                 self.identificationLbl.text = unknownObjectMessage
+                self.confidenceLbl.text = "CONFIDENCE: --"
                 let generator = UINotificationFeedbackGenerator()
                 generator.notificationOccurred(.error)
                 if languageSelection == "en-US" {
@@ -230,12 +231,12 @@ class CameraVC: UIViewController {
         
         if languageSelection == "en-US" {
             languageSelection = "hi_IN"
-            langBtn.setTitle("Hindi", for: .normal)
+            langBtn.setTitle("Language: Hindi", for: .normal)
             languageChangedString = "भाषा हिंदी में बदल गई"
             synthesizeSpeech(fromString: languageChangedString)
         } else {
             languageSelection = "en-US"
-            langBtn.setTitle("English", for: .normal)
+            langBtn.setTitle("Language: English", for: .normal)
             languageChangedString = "Language Changed to English"
             synthesizeSpeech(fromString: languageChangedString)
         }

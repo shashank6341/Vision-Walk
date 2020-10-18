@@ -15,6 +15,8 @@
 		4FAE46D823F6E2B4000D5BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAE46D723F6E2B4000D5BC6 /* Assets.xcassets */; };
 		4FAE46DB23F6E2B4000D5BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAE46D923F6E2B4000D5BC6 /* LaunchScreen.storyboard */; };
 		4FAE46E723F71198000D5BC6 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE46E623F71198000D5BC6 /* Inceptionv3.mlmodel */; };
+		4FE3D7242456AFF3000A73BD /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE3D7232456AFF3000A73BD /* Onboarding.storyboard */; };
+		4FE3D7262456B25C000A73BD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3D7252456B25C000A73BD /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4FAE46DA23F6E2B4000D5BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FAE46DC23F6E2B4000D5BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FAE46E623F71198000D5BC6 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4FE3D7232456AFF3000A73BD /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		4FE3D7252456B25C000A73BD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				4FAE46CE23F6E2B4000D5BC6 /* AppDelegate.swift */,
 				4FAE46D023F6E2B4000D5BC6 /* SceneDelegate.swift */,
 				4FAE46D423F6E2B4000D5BC6 /* Main.storyboard */,
+				4FE3D7232456AFF3000A73BD /* Onboarding.storyboard */,
+				4FE3D7252456B25C000A73BD /* OnboardingViewController.swift */,
 				4FAE46D723F6E2B4000D5BC6 /* Assets.xcassets */,
 				4FAE46D923F6E2B4000D5BC6 /* LaunchScreen.storyboard */,
 				4FAE46DC23F6E2B4000D5BC6 /* Info.plist */,
@@ -158,6 +164,7 @@
 				4FAE46DB23F6E2B4000D5BC6 /* LaunchScreen.storyboard in Resources */,
 				4FAE46D823F6E2B4000D5BC6 /* Assets.xcassets in Resources */,
 				4FAE46D623F6E2B4000D5BC6 /* Main.storyboard in Resources */,
+				4FE3D7242456AFF3000A73BD /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FAE46D323F6E2B4000D5BC6 /* CameraVC.swift in Sources */,
+				4FE3D7262456B25C000A73BD /* OnboardingViewController.swift in Sources */,
 				4FAE46E723F71198000D5BC6 /* Inceptionv3.mlmodel in Sources */,
 				4FAE46CF23F6E2B4000D5BC6 /* AppDelegate.swift in Sources */,
 				4F9D29A123F95C9A00AB3C6A /* Reachability.swift in Sources */,
